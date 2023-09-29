@@ -14,7 +14,8 @@ package calculator;
 import java.time.LocalDateTime;
 
 public class CalcDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Thread.sleep(5000L);
         long counter = 100_000_000;
         var summator = new Summator();
         long startTime = System.currentTimeMillis();
